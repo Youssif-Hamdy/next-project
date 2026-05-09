@@ -66,7 +66,7 @@ This section summarizes **what the codebase actually contains**—useful for por
 ### Data and security
 
 - **MongoDB** connection helper with dev singleton (`lib/db.ts`).
-- **Middleware** (`middleware.ts`) protects `/dashboard/*` (any signed-in user) and `/admin/*` (role `ADMIN`).
+- **Proxy** (`proxy.ts`, formerly `middleware`) protects `/dashboard/*` (any signed-in user) and `/admin/*` (role `ADMIN`).
 
 ### Shared UI
 
@@ -128,7 +128,7 @@ Create `.env.local` in the project root. Do not commit secrets.
 ## Access control
 
 - Routes under `/dashboard` require a signed-in user.
-- Routes under `/admin` require a session with role `ADMIN` (see `middleware.ts`).
+- Routes under `/admin` require a session with role `ADMIN` (see `proxy.ts`).
 
 ## Stack
 
