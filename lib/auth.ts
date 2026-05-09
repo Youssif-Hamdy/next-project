@@ -51,8 +51,7 @@ export const authOptions: NextAuthOptions = {
         if (isHash) {
           isValidPassword = await compare(credentials.password, user.password);
         } else {
-          // Backward compatibility for legacy plain-text passwords.
-          // On successful login, migrate immediately to bcrypt hash.
+         
           isValidPassword = credentials.password === user.password;
           if (isValidPassword) {
             const nextHash = await hash(credentials.password, 12);
