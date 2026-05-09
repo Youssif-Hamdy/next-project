@@ -111,7 +111,6 @@ export default function ProductDetailsPage({ params }: { params: Promise<{ id: s
 
       <section className="animate-float-in overflow-hidden rounded-3xl border border-white/30 bg-white/15 shadow-2xl backdrop-blur-md">
         {hero ? (
-          // eslint-disable-next-line @next/next/no-img-element
           <img
             src={hero}
             alt={product.name}
