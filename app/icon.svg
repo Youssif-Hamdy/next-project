@@ -1,0 +1,14 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iconBagGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#33A1FF"/>
+      <stop offset="100%" stop-color="#155BFF"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="10" y="14" width="108" height="102" rx="26" fill="url(#iconBagGradient)"/>
+  <path d="M36 48C36 32.536 48.536 20 64 20C79.464 20 92 32.536 92 48" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <path d="M36 62H92" stroke="white" stroke-width="6" opacity="0.9"/>
+  <circle cx="50" cy="82" r="7" fill="white"/>
+  <circle cx="78" cy="82" r="7" fill="white"/>
+</svg>
